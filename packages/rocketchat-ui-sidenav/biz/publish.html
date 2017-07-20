@@ -1,0 +1,86 @@
+
+<template name="publish">
+	<div class="page-container page-list">
+
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="">
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+				<h1>
+					学习资源
+					<small>职业培训</small>
+				</h1>
+				<!--<ol class="breadcrumb">-->
+					<!--<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>-->
+					<!--<li><a href="#">UI</a></li>-->
+					<!--<li class="active">Timeline</li>-->
+				<!--</ol>-->
+			</section>
+
+			<!-- Main content -->
+			<section class="content">
+
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<!-- The time line -->
+						<ul class="timeline">
+
+                            {{#each publishs}}
+
+							<!-- timeline time label -->
+							<li class="time-label">
+                            <span class="bg-green">
+								{{dateFormated createTime}}
+							</span>
+								</li>
+								<!-- /.timeline-label -->
+								<!-- timeline item -->
+								<li>
+									<i class="fa fa-envelope bg-blue"></i>
+
+									<div class="timeline-item">
+										<span class="time"><i class="fa fa-clock-o"></i> {{username}}</span>
+
+										<h3 class="timeline-header"> {{resName}}</h3>
+
+										<div class="timeline-body">
+											{{resDesc}}
+										</div>
+										<div class="timeline-footer">
+											<a href="http://localhost:3000/direct/{{username}} " target="" class="btn btn-primary btn-xs">沟通</a>
+											<a href="http://localhost:3000/direct/{{username}} " target="_blank" class="btn btn-primary btn-xs">视频观看</a>
+										</div>
+									</div>
+
+								</li>
+
+								<!-- END timeline item -->
+							{{/each}}
+
+
+						</ul>
+					</div>
+					<!-- /.col -->
+				</div>
+				<!-- /.row -->
+
+
+			</section>
+			<!-- /.content -->
+		</div>
+		<!-- /.content-wrapper -->
+
+
+	</div>
+	<!-- ./wrapper -->
+
+</template>
+
+
+<!--&lt;!&ndash; jQuery 3.1.1 &ndash;&gt;-->
+<!--<script src="../js/jquery-3.1.1.min.js"></script>-->
+<!--&lt;!&ndash; Bootstrap 3.3.7 &ndash;&gt;-->
+<!--<script src="../js/bootstrap.min.js"></script>-->
+<!--&lt;!&ndash; AdminLTE App &ndash;&gt;-->

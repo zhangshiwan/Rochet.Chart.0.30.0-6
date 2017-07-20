@@ -1,0 +1,41 @@
+<template name="pubsave">
+	<form id="pubsave">
+		<div class="box-body">
+			<div class="form-group">
+				<label for="resName">资源名称</label>
+				<input type="text" class="form-control" id="resName" name="resName" placeholder="资源名称">
+			</div>
+			<div class="form-group">
+				<label for="resDesc">资源描述</label>
+				<textarea class="form-control" rows="3" id="resDesc" name="resDesc" placeholder="资源描述"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="resUrl">资源URL</label>
+				<input type="text" class="form-control" id="resUrl" name="resUrl" placeholder="资源url">
+			</div>
+			<div class="form-group">
+				<label>资源类型</label>
+				<select id="resType" name="resType" class="form-control">
+					<option value="1">文字聊天</option>
+					<option value="2">屏幕视频</option>
+					<option value="3">录制视频</option>
+					<option value="4">文档</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>技能类别</label>
+				<select id="skill" name="skill" class="form-control">
+					<option value="1">计算机</option>
+					<option value="2">英语</option>
+					<option value="3">会计</option>
+				</select>
+			</div>
+
+		</div>
+		<!-- /.box-body -->
+
+		<div class="box-footer">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+</template>
