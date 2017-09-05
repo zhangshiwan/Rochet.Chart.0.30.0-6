@@ -59,7 +59,6 @@ Package.onUse(function(api) {
 	api.addFiles('biz/publish.coffee', 'client');
 	api.addFiles('biz/pubsave.html', 'client');
 	api.addFiles('biz/pubsave.js', 'client');
-	api.addFiles('biz/tor.html', 'client');
 
 
 
