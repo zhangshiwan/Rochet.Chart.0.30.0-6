@@ -99,13 +99,7 @@ FlowRouter.route '/biz/pubsave',
 
 
 
-FlowRouter.route '/biz/tor',
-	name: 'pubsave'
 
-	action: ->
-		Session.setDefault('tor', '')
-		RocketChat.TabBar.showGroup 'tor'
-		BlazeLayout.render 'main', {center: 'tor'}
 
 
 
