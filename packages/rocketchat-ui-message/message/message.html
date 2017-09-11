@@ -22,9 +22,9 @@
 			{{/if}}
 		{{/if}}
 		{{#if alias}}
-			<button class="user user-card-message" data-username="{{u.username}}" style="color:#b6b6b6;font-size:13px;" tabindex="1">{{alias}} <span class="message-alias">@{{u.username}}</span></button>
+			<button class="user user-card-message" data-username="{{u.username}}" style="color:#b6b6b6;font-size:13px;font-weight: normal;" tabindex="1">{{alias}} <span class="message-alias">@{{u.username}}</span></button>
 		{{else}}
-			<button class="user user-card-message" data-username="{{u.username}}" style="color:#b6b6b6;font-size:13px;"  tabindex="1">{{u.username}}</button>
+			<button class="user user-card-message" data-username="{{u.username}}" style="color:#b6b6b6;font-size:13px;font-weight: normal;"  tabindex="1">{{u.username}}</button>
 		{{/if}}
 		<span class="info">
 			{{#each roleTags}}
