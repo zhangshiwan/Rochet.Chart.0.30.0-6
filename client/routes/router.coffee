@@ -96,6 +96,7 @@ FlowRouter.route '/biz/pubsave',
 
   action: ->
     menu.toggle()
+    RocketChat.TabBar.showGroup 'pubsave'
     BlazeLayout.render 'main', {center: 'pubsave'}
 
 
