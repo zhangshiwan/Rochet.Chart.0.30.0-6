@@ -41,6 +41,8 @@ Template.sideNav.events
 
   'click .history-div': ->
     SideNav.hide()
+    menu.close()
+    alert(88)
 
 
 Template.sideNav.onRendered ->
