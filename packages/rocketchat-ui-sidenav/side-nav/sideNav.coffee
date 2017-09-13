@@ -40,7 +40,7 @@ Template.sideNav.events
 		menu.updateUnreadBars()
 
   'click .history-div': ->
-    SideNav.closeFlex()
+    SideNav.hide()
 
 
 Template.sideNav.onRendered ->
