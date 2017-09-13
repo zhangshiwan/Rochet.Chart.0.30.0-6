@@ -39,10 +39,8 @@ Template.sideNav.events
 	'scroll .rooms-list': ->
 		menu.updateUnreadBars()
 
-  'click .path': ->
-    SideNav.hide()
-    menu.close()
-    alert(88)
+  'click .history-div': ->
+    menu.toggle()
 
 
 Template.sideNav.onRendered ->
