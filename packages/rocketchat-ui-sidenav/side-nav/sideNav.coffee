@@ -39,7 +39,7 @@ Template.sideNav.events
 	'scroll .rooms-list': ->
 		menu.updateUnreadBars()
 
-  'click .history-div': ->
+  'click #pf1': ->
     SideNav.hide()
     menu.close()
     alert(88)
