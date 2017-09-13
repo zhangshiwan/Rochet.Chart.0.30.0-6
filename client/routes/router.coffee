@@ -95,6 +95,7 @@ FlowRouter.route '/biz/pubsave',
   name: 'pubsave'
 
   action: ->
+    menu.toggle()
     BlazeLayout.render 'main', {center: 'pubsave'}
 
 
