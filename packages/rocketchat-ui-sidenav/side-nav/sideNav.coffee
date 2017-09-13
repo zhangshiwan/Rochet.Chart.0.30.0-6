@@ -39,7 +39,7 @@ Template.sideNav.events
 	'scroll .rooms-list': ->
 		menu.updateUnreadBars()
 
-  'click .history-div': ->
+  'click .rooms-list wrapper .pf1': ->
     menu.toggle()
 
 
