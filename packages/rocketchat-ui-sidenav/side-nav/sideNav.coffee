@@ -39,6 +39,10 @@ Template.sideNav.events
 	'scroll .rooms-list': ->
 		menu.updateUnreadBars()
 
+  'click .history-div': ->
+    SideNav.closeFlex()
+
+
 Template.sideNav.onRendered ->
 	SideNav.init()
 	menu.init()
