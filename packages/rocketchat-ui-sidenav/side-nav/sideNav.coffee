@@ -39,8 +39,6 @@ Template.sideNav.events
 	'scroll .rooms-list': ->
 		menu.updateUnreadBars()
 
-  'click .rooms-list wrapper .pf1': ->
-    menu.toggle()
 
 
 Template.sideNav.onRendered ->
