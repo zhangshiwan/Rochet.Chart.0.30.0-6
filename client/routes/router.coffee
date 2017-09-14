@@ -2,6 +2,7 @@ Blaze.registerHelper 'pathFor', (path, kw) ->
 	return FlowRouter.path path, kw.hash
 
 
+FlowRouter.triggers.exit([roomExit], {except: ["home"]});
 
 BlazeLayout.setRoot 'body'
 
