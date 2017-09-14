@@ -85,6 +85,7 @@ FlowRouter.route '/biz/publish',
 
 	action: ->
     menu.toggle()
+    Session.setDefault('publish', '')
     RocketChat.TabBar.showGroup 'publish'
     BlazeLayout.render 'main', {center: 'publish'}
 
@@ -98,6 +99,7 @@ FlowRouter.route '/biz/pubsave',
 
   action: ->
     menu.toggle()
+    Session.setDefault('pubsave', '')
     RocketChat.TabBar.showGroup 'pubsave'
     BlazeLayout.render 'main', {center: 'pubsave'}
 
