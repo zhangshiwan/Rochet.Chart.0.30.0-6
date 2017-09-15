@@ -41,7 +41,6 @@ Package.onUse(function(api) {
 	// api.addFiles('assets/css/_all-skins.min.css', 'client');
 	api.addFiles('assets/css/AdminLTE.min.css', 'client');
 	api.addFiles('assets/css/bootstrap.min.css', 'client');
-    api.addFiles('client/ChinesePY.js', 'client');
 
 
 });
